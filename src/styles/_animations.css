@@ -3,6 +3,7 @@ section {
 }
 
 .paragraph-animation {
+  height: 700px;
   animation: slideFromLeft 1.5s ease-out forwards;
 }
 

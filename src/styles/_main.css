@@ -66,9 +66,14 @@ img {
   clip-path: url(#myClip);
 }
 
+.figure {
+  margin-bottom: 100px;
+}
+
 figcaption {
   text-align: center;
   font-size: 0.8rem;
+  margin-bottom: 20px;
 }
 
 .presentacion_image {
