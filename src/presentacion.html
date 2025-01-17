@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VisitaMadrid | Presentación</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="./img/favicon_io/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon_io/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main>
+      <div class="main__container main__container-responsive">
+        <article>
+          <h2 class="article__title">Presentación</h2>
+          <include src="./views/svg.html"></include>
+          <p class="article__text">
+            En VisitaMadrid queremos ofrecerte una experiencia completa para
+            descubrir cada rincón de esta maravillosa ciudad. Nuestro sitio web
+            está diseñado para guiarte a través de los monumentos y sitios
+            turísticos más emblemáticos de Madrid, proporcionándote información
+            detallada sobre su historia, cultura y las mejores formas de
+            explorarlos. Desde el icónico Palacio Real hasta el ajetreo de la
+            Puerta del Sol, aquí encontrarás todo lo necesario para planificar
+            tu visita de la manera más cómoda y enriquecedora.
+          </p>
+          <figure class="figure">
+            <img
+              class="animated-image"
+              srcset="
+                ./img/sizes/palacio500w.jpeg   500w,
+                ./img/sizes/palacio850w.jpeg   850w,
+                ./img/sizes/palacio1500w.jpeg 1500w
+              "
+              sizes="(max-width: 500px) 500px,
+                     (max-width: 850px) 850px,
+                     1500px"
+              src="./img/sizes/palacio1280w.jpg"
+              alt="Vista del Palacio Real de Madrid"
+            />
+            <figcaption class="figure__caption">
+              Vista del Palacio Real
+            </figcaption>
+          </figure>
+          <p class="article__text">
+            Nuestro contenido se organiza de manera sencilla y fácil de navegar,
+            para que puedas acceder rápidamente a la información que necesitas.
+            Cada monumento y sitio turístico tiene su propia sección con
+            descripciones detalladas, horarios de apertura, precios de entradas
+            y recomendaciones para aprovechar al máximo tu visita. Además,
+            contamos con rutas sugeridas para aquellos que deseen explorar
+            diferentes áreas de la ciudad, asegurándonos de que no te pierdas
+            nada importante.
+          </p>
+          <figure class="figure">
+            <img
+              class="animated-image"
+              srcset="
+                ./img/sizes/cristal500w.jpeg   500w,
+                ./img/sizes/cristal850w.jpeg   850w,
+                ./img/sizes/cristal1500w.jpeg 1500w
+              "
+              sizes="(max-width: 500px) 500px,
+                   (max-width: 850px) 850px,
+                   1500px"
+              src="./img/sizes/cristal1280w.jpg"
+              alt="Vista del Palacio de Cristal en el Parque del Retiro"
+            />
+            <figcaption class="figure__caption">
+              Vista del Palacio de Cristal del parque del Retiro
+            </figcaption>
+          </figure>
+          <p class="article__text">
+            Además, incluimos una sección de curiosidades y datos históricos que
+            enriquecerá tu experiencia, ayudándote a entender mejor el contexto
+            de los lugares que visitas. Si eres un apasionado de la fotografía,
+            también te ofrecemos información sobre los mejores puntos
+            panorámicos para capturar la esencia de Madrid. Con VisitMadrid,
+            queremos que tu viaje sea inolvidable, lleno de momentos únicos y
+            con la posibilidad de conocer a fondo la esencia de esta ciudad
+            vibrante y llena de historia.
+          </p>
+          <figure class="figure">
+            <img
+              class="animated-image"
+              srcset="
+                ./img/sizes/cibeles500w.jpeg   500w,
+                ./img/sizes/cibeles850w.jpeg   850w,
+                ./img/sizes/cibeles1500w.jpeg 1500w
+              "
+              sizes="(max-width: 500px) 500px,
+                   (max-width: 850px) 850px,
+                   1500px"
+              src="./img/sizes/cibeles1280w.jpg"
+              alt="Vista de la plaza de Cibeles"
+            />
+            <figcaption class="figure__caption">
+              Vista de la plaza de Cibeles con el edificio de correos
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script src="script.js"></script>
+  </body>
+</html>

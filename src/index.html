@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisitaMadrid | Inicio</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="./img/favicon_io/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-32x32.png">
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+  <main>
+    <div class="main__container main__container-responsive">
+      <article>
+        <h2 class="article__title">Bienvenidos a VisitaMadrid</h2>
+        <p class="article__text">Bienvenidos a VisitaMadrid, tu guía para descubrir los tesoros de la capital. Madrid es una ciudad vibrante
+          llena de historia, arte y cultura. Desde los imponentes monumentos como el Palacio Real y la Puerta de Alcalá,
+          hasta los encantadores rincones de sus parques y calles, Madrid tiene algo especial para todos.</p>
+        <figure class="figure">
+          <img
+            class="clip-image animated-image"
+            srcset="
+            ./img/sizes/portada400w.jpeg 400w,
+            ./img/sizes/portada800w.jpeg 800w,
+            ./img/sizes/portada1280w.jpg 1280w
+            "
+            sizes="(max-width: 450px) 80vh,
+                   (max-width: 850px) 60vh,
+                      100vw"
+            src="./img/sizes/portada1280w.jpg"
+            alt="Vista aerea de la Gran via de Madrid" />
+            <svg width="0" height="0">
+              <defs>
+                <clipPath id="myClip" clipPathUnits="objectBoundingBox">
+                  <rect x="0" y="0.30" width="1" height="0.3" />
+                  <rect x="0" y="0.05" width="0.2" height="0.3" />
+                  <rect x="0.4" y="0.05" width="0.2" height="0.3" />
+                  <rect x="0.8" y="0.05" width="0.2" height="0.3" />
+                  <rect x="0" y="0.75" width="0.3" height="0.35" />
+                  <rect x="0.35" y="0.75" width="0.3" height="0.35" />
+                  <rect x="0.7" y="0.75" width="0.3" height="0.35" />
+                  <text x="0.15" y="0.7" font-size="0.1" font-weight="bold">VISITAMADRID</text>
+                </clipPath>
+              </defs>
+            </svg>
+          <figcaption class="figure__caption">Vista panorámica de la Gran Vía de Madrid</figcaption>
+        </figure>
+        <p class="article__text">En esta página encontrarás toda la información que necesitas para explorar los sitios turísticos más icónicos
+          de la ciudad. Descubre la majestuosidad del Museo del Prado, pasea por la Gran Vía, o relájate en el Parque
+          del Retiro. Nuestro objetivo es ayudarte a vivir la experiencia madrileña al máximo, guiándote por sus
+          monumentos, plazas y lugares de interés.</p>
+      </article>
+    </div>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script src="script.js"></script>
+</body>
+</html>

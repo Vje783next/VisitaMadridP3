@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisitaMadrid | Gran via</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <include src="./views/header.html"></include>
+  <main>
+    <div class="main__container main__container-responsive">
+      <article>
+        <h2 class="article__title">PUERTA DE ALCALÁ</h2>
+        <ul class="list-detalles">
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+        </ul>
+        <figure>
+          <picture>
+            <source media="(max-width: 600px)" srcset="../img/direccionArte/alcala_600.jpg">
+            <source media="(max-width: 1200px)" srcset="../img/direccionArte/alcala_1200.jpg">
+            <img class="animated-image" src="../img/sizes/alcala800w.jpeg" alt="Vista de la Puerta de Alcalá">
+          </picture>
+          <figcaption>Vista de la Puerta de Alcalá </figcaption>
+        </figure>
+        <section id="ubicacion">
+          <h3 class="section__title">UBICACIÓN</h3>
+          <p class="paragraph_animation">La Puerta de Alcalá se encuentra en la Plaza de la Independencia, en pleno centro de Madrid, muy cerca del Parque del Retiro. Este emblemático monumento se sitúa en uno de los principales puntos de acceso a la ciudad y es fácilmente reconocible por su proximidad a calles importantes como la calle de Alcalá y el Paseo de Recoletos. La Puerta de Alcalá es un lugar de paso habitual para turistas y residentes, debido a su ubicación privilegiada y su conexión con otros puntos de interés de la capital.</p>
+        </section>
+        <source srcset="../img/formatos/alcala1.jpg?as=avif" type="image/avif" />
+        <source srcset="../img/formatos/alcala1.jpg?as=webp" type="image/webp" />
+        <img class="animated-image" src="../img/formatos/alcala1.jpg" alt="Vista de la Puerta de Alcalá" />
+        <section id="historia">
+          <h3 class="section__title">HISTORIA</h3>
+          <p class="paragraph-animation">La historia de la Puerta de Alcalá se remonta al siglo XVIII, cuando el rey Carlos III encargó su construcción al arquitecto Francesco Sabatini. Inaugurada en 1778, la Puerta de Alcalá fue concebida como un arco triunfal para conmemorar la entrada del monarca a Madrid. Su diseño neoclásico, con cinco arcos y una decoración elegante, la convierte en uno de los monumentos más representativos del periodo ilustrado en España. A lo largo de los siglos, la Puerta de Alcalá ha sido testigo de importantes acontecimientos históricos y ha llegado a simbolizar la grandeza de la ciudad.</p>
+        </section>
+        <source srcset="../img/formatos/alcala2.jpg?as=avif" type="image/avif" />
+        <source srcset="../img/formatos/alcala2.jpg?as=webp" type="image/webp" />
+        <img class="animated-image" src="../img/formatos/alcala2.jpg" alt="Vista nocturna de la Puerta de Alcalá" />        
+        <section id="actividades">
+          <h3 class="section__title">ACTIVIDADES</h3>
+          <p class="paragraph-animation">La Puerta de Alcalá es un lugar muy popular tanto para los turistas como para los residentes de Madrid. Es un sitio perfecto para hacer fotos, especialmente durante la noche, cuando la puerta se ilumina y ofrece una vista espectacular. Además, su cercanía al Parque del Retiro invita a los visitantes a disfrutar de un paseo tranquilo por la zona, rodeados de jardines y espacios verdes. A lo largo del año, la Puerta de Alcalá es escenario de diferentes eventos y celebraciones, como conciertos y actos culturales, que realzan su importancia como un punto de encuentro en la ciudad</p>
+        </section>
+      </article>
+      <article>
+        <include src="./views/detalles.html"></include>
+      </article>
+    </div>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script src="../script.js"></script>
+</body>
+</html>

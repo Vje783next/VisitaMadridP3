@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisitaMadrid | Puerta del Sol</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <include src="./views/header.html"></include>
+  <main>
+    <div class="main__container main__container-responsive">
+      <article>
+        <h2 class="article__title">LA PUERTA DEL SOL</h2>
+        <ul class="list-detalles">
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+        </ul>
+        <figure>
+          <picture>
+            <source media="(max-width: 600px)" srcset="../img/direccionArte/sol_600.jpg">
+            <source media="(max-width: 1200px)" srcset="../img/direccionArte/sol_1200.jpg">
+            <img class="animated-image" src="../img/sizes/sol800w.jpeg" alt="Puerta del Sol">
+          </picture>
+          <figcaption>Puerta del Sol</figcaption>
+        </figure>
+        <section id="ubicacion">
+          <h3 class="section__title">UBICACIÓN</h3>
+          <p class="paragraph-animation">La Puerta del Sol se encuentra en el centro de Madrid, siendo uno de los puntos más emblemáticos y concurridos de la ciudad. Ubicada a corta distancia de la Plaza Mayor y la Gran Vía, la Puerta del Sol es fácilmente accesible mediante diversas líneas de metro y autobús. Este lugar no solo es el corazón geográfico de la capital, sino también un punto de referencia para los visitantes que desean explorar la ciudad, al estar rodeado de numerosos lugares de interés y de calles llenas de vida y actividad comercial.</p>
+        </section>
+        <source srcset="../img/formatos/sol1.jpg?as=avif" type="image/avif" />
+        <source srcset="../img/formatos/sol1.jpg?as=webp" type="image/webp" />
+        <img class="animated-image" src="../img/formatos/sol1.jpg" alt="Vista soleada del edificio del reloj de la puerta del Sol  " />        
+        <section id="historia">
+          <h3 class="section__title">HISTORIA</h3>
+          <p class="paragraph-animation">La historia de la Puerta del Sol se remonta al siglo XV, cuando era una de las puertas de acceso a la ciudad amurallada de Madrid. Con el paso del tiempo, se transformó en el centro neurálgico de la capital. A finales del siglo XIX, se construyó el edificio de la Casa de Correos, que alberga el famoso reloj cuyas campanadas marcan la entrada del Año Nuevo. La Puerta del Sol ha sido escenario de numerosos eventos históricos, incluyendo celebraciones, protestas y manifestaciones, convirtiéndola en un lugar cargado de simbolismo y significado para los madrileños.</p>
+        </section>
+        <source srcset="../img/formatos/sol2.jpg?as=avif" type="image/avif" />
+        <source srcset="../img/formatos/sol2.jpg?as=webp" type="image/webp" />
+        <img class="animated-image" src="../img/formatos/sol2.jpg" alt="Estatua del oso y el madroño de la puerta del sol" />       
+        <section id="actividades">
+          <h3 class="section__title">ACTIVIDADES</h3>
+          <p class="paragraph-animation">La Puerta del Sol ofrece una amplia variedad de actividades para los visitantes. Es el lugar ideal para comenzar un recorrido por el centro histórico de Madrid y se pueden ver puntos icónicos como la estatua del Oso y el Madroño, símbolo de la ciudad, así como el kilómetro cero, desde donde parten las principales carreteras de España. Además, en la Puerta del Sol es común encontrar artistas callejeros, creando un ambiente animado y lleno de energía. Los visitantes pueden disfrutar de las tiendas y cafeterías cercanas, haciendo de la Puerta del Sol un lugar imprescindible para conocer el pulso de Madrid.</p>
+        </section>
+      </article>
+      <article>
+        <include src="./views/detalles.html"></include>
+      </article>
+    </div>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script src="../script.js"></script>
+</body>
+</html>

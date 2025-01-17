@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VisitaMadrid | Palacio Real</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main>
+      <div class="main__container main__container-responsive">
+        <article>
+          <h2 class="article__title">PALACIO REAL</h2>
+          <ul class="list-detalles">
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+          </ul>
+          <figure>
+            <picture>
+              <source
+                media="(max-width: 600px)"
+                srcset="../img/direccionArte/palacio_600.jpg"
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcset="../img/direccionArte/palacio_1200.jpg"
+              />
+              <img
+                class="animated-image"
+                src="../img/sizes/palacio_patio800w.jpeg"
+                alt="Patio del Palacio Real"
+              />
+            </picture>
+            <figcaption>Vista de la Plaza del Palacio Real</figcaption>
+          </figure>
+          <section id="ubicacion">
+            <h3 class="section__title">UBICACIÓN</h3>
+            <p class="paragraph-animation">
+              El Palacio Real se encuentra en la zona occidental de la ciudad,
+              cerca de la Catedral de la Almudena y a pocos pasos de la Plaza de
+              Oriente. Este majestuoso edificio está situado sobre el antiguo
+              Alcázar de Madrid, en un lugar privilegiado con vistas al río
+              Manzanares. La estación de metro más cercana es Ópera, lo que hace
+              que el Palacio sea fácilmente accesible tanto para los residentes
+              como para los turistas que desean explorar la historia real de la
+              capital española.
+            </p>
+          </section>
+          <source
+            srcset="../img/formatos/palacio1.jpg?as=avif"
+            type="image/avif"
+          />
+          <source
+            srcset="../img/formatos/palacio1.jpg?as=webp"
+            type="image/webp"
+          />
+          <img
+            class="animated-image"
+            src="../img/formatos/palacio1.jpg"
+            alt="Entrada de la escaleras a los jardines de Sabatini del Palacio Real"
+          />
+          <section id="historia">
+            <h3 class="section__title">HISTORIA</h3>
+            <p class="paragraph-animation">
+              La historia del Palacio Real de Madrid comienza en el siglo XVIII,
+              cuando Felipe V ordenó su construcción tras el incendio que
+              destruyó el antiguo Alcázar. Diseñado por arquitectos italianos y
+              construido principalmente en piedra y mármol, el palacio se
+              convirtió en la residencia oficial de la monarquía española.
+              Aunque actualmente no es la residencia habitual de la familia
+              real, el Palacio Real sigue siendo utilizado para ceremonias
+              oficiales y visitas de estado, siendo uno de los edificios más
+              emblemáticos de la ciudad por su riqueza histórica y
+              arquitectónica.
+            </p>
+          </section>
+          <source
+            srcset="../img/formatos/palacio2.jpg?as=avif"
+            type="image/avif"
+          />
+          <source
+            srcset="../img/formatos/palacio2.jpg?as=webp"
+            type="image/webp"
+          />
+          <img
+            class="animated-image"
+            src="../img/formatos/palacio2.jpg"
+            alt="Vista de Palacio Real con flores"
+          />
+          <section id="actividades">
+            <h3 class="section__title">ACTIVIDADES</h3>
+            <p class="paragraph-animation">
+              El Palacio Real ofrece una gran variedad de actividades para los
+              visitantes. Se pueden recorrer sus majestuosos salones, que
+              cuentan con una impresionante decoración, frescos y tapices
+              históricos. También es posible visitar la Real Armería, que
+              alberga una de las colecciones más completas de armaduras y armas
+              del mundo. Además, los jardines del Campo del Moro y los Jardines
+              de Sabatini, situados alrededor del palacio, son perfectos para
+              pasear y disfrutar de las vistas. Durante todo el año, el Palacio
+              Real organiza exposiciones temporales y visitas guiadas que
+              permiten conocer más sobre la historia de la monarquía española y
+              su legado cultural.
+            </p>
+          </section>
+        </article>
+        <article>
+          <include class="animated-image" src="./views/detalles.html"></include>
+        </article>
+      </div>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script src="../script.js"></script>
+  </body>
+</html>

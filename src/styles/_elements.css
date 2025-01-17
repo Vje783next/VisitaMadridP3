@@ -1,0 +1,43 @@
+:root {
+  --background-color: #ddd;
+  --primary-color: #ee0000;
+  --container-color: #fff;
+  --main-color: #000;
+}
+
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: var(--main-color);
+  background-color: var(--background-color);
+}
+
+a:focus {
+  outline: 1px solid var(--container-color);
+}
+
+.article__title,
+.section__title {
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.article__text {
+  padding: 10px 0;
+}
+
+.gpt,
+.pexels {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+
+

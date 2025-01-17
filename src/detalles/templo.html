@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisitaMadrid | Templo de Debod</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <include src="./views/header.html"></include>
+  <main>
+    <div class="main__container main__container-responsive">
+      <article>
+        <h2 class="article__title">EL TEMPLO DE DEBOD</h2>
+        <ul class="list-detalles">
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+        </ul>
+        <figure>
+          <picture>
+            <source media="(max-width: 600px)" srcset="../img/direccionArte/templo_600.jpg">
+            <source media="(max-width: 1200px)" srcset="../img/direccionArte/templo_1200.jpg">
+            <img class="animated-image" src="../img/sizes/debod800w.jpeg" alt="Vista nocturna con el Templo de Debod iluminado">
+          </picture>
+          <figcaption>Templo de Debod </figcaption>
+        </figure>
+        <section id="ubicacion">
+          <h3 class="section__title">UBICACIÓN</h3>
+          <p class="paragraph-animation">El Templo de Debod se encuentra en el Parque del Oeste, cerca de la Plaza de España, en el centro de Madrid. Su ubicación elevada ofrece unas vistas panorámicas únicas de la Casa de Campo y del Palacio Real, lo que lo convierte en un lugar privilegiado para disfrutar del atardecer en la capital. Gracias a su proximidad a importantes zonas turísticas y al fácil acceso mediante transporte público, el templo es una parada obligatoria para quienes desean explorar un rincón especial de la ciudad.</p>
+        </section>
+        <source srcset="../img/formatos/debod1.jpg?as=avif" type="image/avif" />
+        <source srcset="../img/formatos/debod1.jpg?as=webp" type="image/webp" />
+        <img class="animated-image" src="../img/formatos/debod1.jpg" alt="Vista soleada del Templo de Debod" />        
+        <section id="historia">
+          <h3 class="section__title">HISTORIA</h3>
+          <p class="paragraph-animation">La historia del Templo de Debod comienza en Egipto, donde fue construido originalmente en el siglo II a.C., dedicado a los dioses Amón e Isis. En 1968, como gesto de agradecimiento al apoyo de España en la preservación de los templos de Nubia, el gobierno egipcio donó el templo al país. Fue desmontado y trasladado a Madrid, donde se reconstruyó piedra a piedra en su ubicación actual. Hoy en día, el Templo de Debod es uno de los pocos ejemplos de arquitectura egipcia antigua que se pueden encontrar fuera de Egipto, siendo un símbolo de la colaboración internacional para la conservación del patrimonio histórico.</p>
+        </section>
+        <source srcset="../img/formatos/debod2.jpg?as=avif" type="image/avif" />
+        <source srcset="../img/formatos/debod2.jpg?as=webp" type="image/webp" />
+        <img class="animated-image" src="../img/formatos/debod2.jpg" alt="Vista aerea del templo de Debod y el parque del oeste" />        
+        <section id="actividades">
+          <h3 class="section__title">ACTIVIDADES</h3>
+          <p class="paragraph-animation">El Templo de Debod es un lugar ideal para disfrutar de diversas actividades culturales y de ocio. Los visitantes pueden recorrer el interior del templo y aprender sobre su historia a través de paneles informativos y exposiciones. Además, el parque que lo rodea es perfecto para pasear y relajarse, y se convierte en un punto de encuentro popular al atardecer, cuando la iluminación del templo crea un ambiente mágico. A lo largo del año, también se celebran actividades culturales y eventos al aire libre en el área circundante, haciendo del Templo de Debod un lugar vibrante y lleno de historia en el corazón de Madrid.</p>
+        </section>
+      </article>
+      <article>
+        <include src="./views/detalles.html"></include>
+      </article>
+    </div>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script src="../script.js"></script>
+</body>
+</html>

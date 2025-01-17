@@ -1,0 +1,42 @@
+{
+  "name": "p1",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "npm-run-all clean parcel:dev",
+    "dev": "parcel src/index.html",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build --no-cache",
+    "clean": "rimraf dist .parcel-cache",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Juan Estevez <example-user@example.com>",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-arrow-functions": "^7.25.9",
+    "@babel/preset-flow": "^7.25.9",
+    "@emotion/babel-plugin": "^11.12.0",
+    "autoprefixer": "^10.4.20",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "cssnano": "^7.0.6",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.13.2",
+    "postcss-import": "^16.1.0",
+    "posthtml-include": "^2.0.1",
+    "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "sharp": "^0.33.5"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ]
+}

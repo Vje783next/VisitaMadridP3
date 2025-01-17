@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisitaMadrid | Plaza Mayor</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <include src="./views/header.html"></include>
+  <main>
+    <div class="main__container main__container-responsive">
+      <article>
+        <h2 class="article__title">PLAZA MAYOR</h2>
+        <ul class="list-detalles">
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+        </ul>
+        <figure>
+          <picture>
+            <source media="(max-width: 600px)" srcset="../img/direccionArte/mayor_600.jpg">
+            <source media="(max-width: 1200px)" srcset="../img/direccionArte/mayor_1200.jpg">
+            <img class="animated-image" src="../img/sizes/mayor800w.jpeg" alt="Plaza Mayor">
+          </picture>
+          <figcaption>Plaza Mayor </figcaption>
+        </figure>
+        <section id="ubicacion">
+          <h3 class="section__title">UBICACIÓN</h3>
+          <p>La Plaza Mayor se encuentra en el corazón del centro histórico de Madrid, a pocos pasos de otros lugares emblemáticos como la Puerta del Sol y el Palacio Real. Rodeada de calles estrechas y con acceso desde varios arcos, la plaza es fácilmente accesible a pie o en transporte público, con varias estaciones de metro cercanas, como Sol y Ópera. Su ubicación estratégica la convierte en un punto de encuentro ideal para residentes y turistas que desean explorar la riqueza histórica y cultural de la capital española.</p>
+        </section>
+        <source srcset="../img/formatos/mayor1.jpg?as=avif" type="image/avif" />
+        <source srcset="../img/formatos/mayor1.jpg?as=webp" type="image/webp" />
+        <img class="animated-image" src="../img/formatos/mayor1.jpg" alt="Vista de la Plaza mayor por la tarde" />        <section id="historia">
+          <h3 class="section__title">HISTORIA</h3>
+          <p class="paragraph-animation">La historia de la Plaza Mayor se remonta al siglo XVII, durante el reinado de Felipe III, quien ordenó la construcción de esta gran plaza para servir como centro de la vida social y comercial de Madrid. A lo largo de los siglos, la plaza ha sido escenario de numerosos eventos, desde mercados y corridas de toros hasta celebraciones reales y procesiones religiosas. Su arquitectura, con fachadas rojas y soportales rodeando la plaza, refleja el estilo herreriano característico de la época, y la estatua ecuestre de Felipe III, ubicada en el centro, es uno de sus elementos más reconocibles.
+        </section>
+        <source srcset="../img/formatos/mayor2.jpg?as=avif" type="image/avif" />
+        <source srcset="../img/formatos/mayor2.jpg?as=webp" type="image/webp" />
+        <img class="animated-image" src="../img/formatos/mayor2.jpg" alt="Estatua de Felipe IV en la Plaza Mayor" />        <section id="actividades">
+          <h3 class="section__title">ACTIVIDADES</h3>
+          <p class="paragraph-animation">La Plaza Mayor es un lugar lleno de vida y actividades para disfrutar. Los visitantes pueden pasear por sus soportales y descubrir las tiendas tradicionales, así como sentarse en alguna de las muchas terrazas de bares y restaurantes que rodean la plaza para probar la gastronomía local. Durante la temporada navideña, la plaza se convierte en el escenario de un popular mercado de Navidad, con puestos que venden todo tipo de artículos festivos. Además, a lo largo del año, se celebran eventos culturales y espectáculos al aire libre, lo que convierte a la Plaza Mayor en un punto neurálgico del ocio y la cultura madrileña.</p>
+        </section>
+      </article>
+      <article>
+        <include src="./views/detalles.html"></include>
+      </article>
+    </div>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script src="../script.js"></script>
+</body>
+</html>

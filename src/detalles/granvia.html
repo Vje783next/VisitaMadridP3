@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisitaMadrid | Gran via</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <include src="./views/header.html"></include>
+  <main>
+    <div class="main__container main__container-responsive">
+      <article>
+        <h2 class="article__title">GRAN VIA</h2>
+        <ul class="list-detalles">
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+        </ul>
+        <figure>
+          <picture>
+            <source media="(max-width: 600px)" srcset="../img/direccionArte/granvia_600.jpg">
+            <source media="(max-width: 1200px)" srcset="../img/direccionArte/granvia_1200.jpg">
+            <img class="animated-image" src="../img/sizes/callao800w.jpeg" alt="Gran via">
+          </picture>
+          <figcaption>Gran via </figcaption>
+        </figure>
+        <section id="ubicacion">
+          <h3 class="section__title">UBICACIÓN</h3>
+          <p class="paragraph-animation">La Gran Vía se encuentra en el corazón de Madrid, conectando la calle de Alcalá con la Plaza de España. Esta emblemática avenida atraviesa el centro de la ciudad, rodeada de algunos de los edificios más importantes y conocidos de la capital. Su ubicación estratégica hace que sea una de las principales arterias comerciales y culturales de Madrid, y su proximidad a lugares turísticos como la Puerta del Sol y la Plaza de Cibeles la convierte en un punto de paso obligado para quienes visitan la ciudad.</p>
+        </section>
+        <source srcset="../img/formatos/granvia1.jpg?as=avif" type="image/avif" />
+        <source srcset="../img/formatos/granvia1.jpg?as=webp" type="image/webp" />
+        <img class="animated-image" src="../img/formatos/granvia1.jpg" alt="Vista nocturna de la Gran VIa" />
+        <section id="historia">
+          <h3 class="section__title">HISTORIA</h3>
+          <p class="paragraph-animation">La historia de la Gran Vía comenzó a principios del siglo XX, cuando se ideó su construcción como una forma de modernizar la ciudad y mejorar la conexión entre el este y el oeste de Madrid. La obra, que se inició en 1910 y duró más de dos décadas, implicó la demolición de numerosos edificios antiguos para dar paso a esta nueva y grandiosa avenida. La Gran Vía se ha convertido en un símbolo del progreso de Madrid, con una arquitectura que refleja el eclecticismo de la época, combinando estilos como el art déco, el neobarroco y el racionalismo.</p>
+        </section>
+        <source srcset="../img/formatos/granvia2.jpg?as=avif" type="image/avif" />
+        <source srcset="../img/formatos/granvia2.jpg?as=webp" type="image/webp" />
+        <img class="animated-image" src="../img/formatos/granvia2.jpg" alt="Vista de la gran via sin coches" />        <section id="actividades">
+          <h3 class="section__title">ACTIVIDADES</h3>
+          <p class="paragraph-animation">La Gran Vía es conocida por su vibrante vida comercial y cultural, lo que la convierte en un lugar lleno de actividades para disfrutar. Los visitantes pueden recorrer sus numerosas tiendas, que incluyen desde boutiques de lujo hasta grandes almacenes, o disfrutar de una película en uno de sus históricos cines. Además, la avenida es famosa por albergar algunos de los teatros más importantes de la ciudad, donde se representan musicales y obras de teatro al estilo de Broadway. Pasear por la Gran Vía es una experiencia única, llena de luces, movimiento y el bullicio característico de una de las calles más icónicas de Madrid.</p>
+        </section>
+      </article>
+      <article>
+        <include src="./views/detalles.html"></include>
+      </article>
+    </div>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script src="../script.js"></script>
+</body>
+</html>
