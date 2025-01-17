@@ -1,56 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VisitaMadrid | Museo del Prado</title>
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-  <include src="./views/header.html"></include>
-  <main>
-    <div class="main__container main__container-responsive">
-      <article>
-        <h2 class="article__title">MUSEO DEL PRADO</h2>
-        <ul class="list-detalles">
-          <li><a href="#ubicacion">Ubicación</a></li>
-          <li><a href="#historia">Historia</a></li>
-          <li><a href="#actividades">Actividades</a></li>
-        </ul>
-        <figure>
-          <picture>
-            <source media="(max-width: 600px)" srcset="../img/direccionArte/prado_600.jpg">
-            <source media="(max-width: 1200px)" srcset="../img/direccionArte/prado_1200.jpg">
-            <img class="animated-image" src="../img/sizes/prado800w.jpeg" alt="Museo del Prado">
-          </picture>          
-          <figcaption>Vista de la entrada de la puerta de Velazquez del Museo del Prado </figcaption>
-        </figure>
-        <section id="ubicacion">
-          <h3 class="section__title">UBICACIÓN</h3>
-          <p class="paragraph-animation">El Museo del Prado se encuentra en el Paseo del Prado, en el centro de Madrid, muy cerca del Parque del Retiro y de otros importantes museos como el Reina Sofía y el Thyssen-Bornemisza, formando lo que se conoce como el "Triángulo del Arte". Su ubicación privilegiada lo convierte en un lugar de fácil acceso tanto para los residentes como para los turistas que desean disfrutar de la oferta cultural de la capital. Además, la cercanía de varias estaciones de metro y paradas de autobús facilita la llegada al museo desde cualquier punto de la ciudad.</p>
-        </section>
-        <source srcset="../img/formatos/prado1.jpg?as=avif" type="image/avif" />
-        <source srcset="../img/formatos/prado1.jpg?as=webp" type="image/webp" />
-        <img class="animated-image" src="../img/formatos/prado1.jpg" alt="Vista de la entrada principal del Museo del Prado" />        
-        <section id="historia">
-          <h3 class="section__title">HISTORIA</h3>
-          <p class="paragraph-animation">La historia del Museo del Prado comienza en el siglo XVIII, cuando el rey Carlos III ordenó la construcción del edificio que inicialmente se pensó como un Museo de Historia Natural. Sin embargo, fue su nieto, el rey Fernando VII, quien en 1819 inauguró el museo con el propósito de albergar las colecciones reales de pintura y escultura. Desde entonces, el Prado ha crecido hasta convertirse en uno de los museos de arte más importantes del mundo, con una impresionante colección de obras maestras que abarca desde el Renacimiento hasta el siglo XIX, incluyendo a artistas como Velázquez, Goya, El Greco y Rubens.</p>
-        </section>
-        <source srcset="../img/formatos/prado2.jpg?as=avif" type="image/avif" />
-        <source srcset="../img/formatos/prado2.jpg?as=webp" type="image/webp" />
-        <img class="animated-image" src="../img/formatos/prado2.jpg" alt="Imagen en blanco y negro de la entrada de Goya del Museo del Prado" />        
-        <section id="actividades">
-          <h3 class="section__title">ACTIVIDADES</h3>
-          <p class="paragraph-animation">El Museo del Prado ofrece una gran variedad de actividades para los visitantes, que incluyen visitas guiadas, talleres y exposiciones temporales. Los visitantes pueden recorrer sus amplias salas para admirar obras emblemáticas como "Las Meninas" de Velázquez o "El Jardín de las Delicias" de El Bosco. Además, el museo organiza actividades educativas para todas las edades, con el objetivo de acercar el arte a todos los públicos. También se pueden disfrutar de charlas, conferencias y eventos especiales que enriquecen la experiencia y permiten conocer más a fondo el patrimonio artístico que el Prado tiene para ofrecer.</p>
-        </section>
-      </article>
-      <article>
-        <include src="./views/detalles.html"></include>
-      </article>
-    </div>
-  </main>
-  <include src="./views/footer.html"></include>
-  <script src="../script.js" defer></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VisitaMadrid | Museo del Prado</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main>
+      <div class="main__container main__container-responsive">
+        <article>
+          <h2 class="article__title">MUSEO DEL PRADO</h2>
+          <ul class="list-detalles">
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+          </ul>
+          <figure>
+            <picture>
+              <source
+                media="(max-width: 600px)"
+                srcset="../img/direccionArte/prado_600.jpg"
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcset="../img/direccionArte/prado_1200.jpg"
+              />
+              <img
+                class="animated-image"
+                src="../img/sizes/prado800w.jpeg"
+                alt="Museo del Prado"
+              />
+            </picture>
+            <figcaption>
+              Vista de la entrada de la puerta de Velazquez del Museo del Prado
+            </figcaption>
+          </figure>
+          <section id="ubicacion">
+            <h3 class="section__title">UBICACIÓN</h3>
+            <p class="paragraph-animation">
+              El Museo del Prado se encuentra en el Paseo del Prado, en el
+              centro de Madrid, muy cerca del Parque del Retiro y de otros
+              importantes museos como el Reina Sofía y el Thyssen-Bornemisza,
+              formando lo que se conoce como el "Triángulo del Arte". Su
+              ubicación privilegiada lo convierte en un lugar de fácil acceso
+              tanto para los residentes como para los turistas que desean
+              disfrutar de la oferta cultural de la capital. Además, la cercanía
+              de varias estaciones de metro y paradas de autobús facilita la
+              llegada al museo desde cualquier punto de la ciudad.
+            </p>
+          </section>
+          <source
+            srcset="../img/formatos/prado1.jpg?as=avif"
+            type="image/avif"
+          />
+          <source
+            srcset="../img/formatos/prado1.jpg?as=webp"
+            type="image/webp"
+          />
+          <img
+            class="animated-image"
+            src="../img/formatos/prado1.jpg"
+            alt="Vista de la entrada principal del Museo del Prado"
+            loading="lazy"
+          />
+          <section id="historia">
+            <h3 class="section__title">HISTORIA</h3>
+            <p class="paragraph-animation">
+              La historia del Museo del Prado comienza en el siglo XVIII, cuando
+              el rey Carlos III ordenó la construcción del edificio que
+              inicialmente se pensó como un Museo de Historia Natural. Sin
+              embargo, fue su nieto, el rey Fernando VII, quien en 1819 inauguró
+              el museo con el propósito de albergar las colecciones reales de
+              pintura y escultura. Desde entonces, el Prado ha crecido hasta
+              convertirse en uno de los museos de arte más importantes del
+              mundo, con una impresionante colección de obras maestras que
+              abarca desde el Renacimiento hasta el siglo XIX, incluyendo a
+              artistas como Velázquez, Goya, El Greco y Rubens.
+            </p>
+          </section>
+          <source
+            srcset="../img/formatos/prado2.jpg?as=avif"
+            type="image/avif"
+          />
+          <source
+            srcset="../img/formatos/prado2.jpg?as=webp"
+            type="image/webp"
+          />
+          <img
+            class="animated-image"
+            src="../img/formatos/prado2.jpg"
+            alt="Imagen en blanco y negro de la entrada de Goya del Museo del Prado"
+            loading="lazy"
+          />
+          <section id="actividades">
+            <h3 class="section__title">ACTIVIDADES</h3>
+            <p class="paragraph-animation">
+              El Museo del Prado ofrece una gran variedad de actividades para
+              los visitantes, que incluyen visitas guiadas, talleres y
+              exposiciones temporales. Los visitantes pueden recorrer sus
+              amplias salas para admirar obras emblemáticas como "Las Meninas"
+              de Velázquez o "El Jardín de las Delicias" de El Bosco. Además, el
+              museo organiza actividades educativas para todas las edades, con
+              el objetivo de acercar el arte a todos los públicos. También se
+              pueden disfrutar de charlas, conferencias y eventos especiales que
+              enriquecen la experiencia y permiten conocer más a fondo el
+              patrimonio artístico que el Prado tiene para ofrecer.
+            </p>
+          </section>
+        </article>
+        <article>
+          <include src="./views/detalles.html"></include>
+        </article>
+      </div>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script src="../script.js" defer></script>
+  </body>
 </html>

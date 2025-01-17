@@ -2,6 +2,7 @@
   "name": "p1",
   "version": "1.0.0",
   "source": "src/index.html",
+  "type": "module",
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
     "dev": "parcel src/index.html",
@@ -22,6 +23,7 @@
     "@emotion/babel-plugin": "^11.12.0",
     "autoprefixer": "^10.4.20",
     "babel-plugin-transform-remove-console": "^6.9.4",
+    "critical": "^7.2.1",
     "cssnano": "^7.0.6",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.13.2",

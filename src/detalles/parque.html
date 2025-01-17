@@ -1,56 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VisitaMadrid | Parque del Retiro</title>
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-  <include src="./views/header.html"></include>
-  <main>
-    <div class="main__container main__container-responsive">
-      <article>
-        <h2 class="article__title">EL PARQUE DEL RETIRO</h2>
-        <ul class="list-detalles">
-          <li><a href="#ubicacion">Ubicación</a></li>
-          <li><a href="#historia">Historia</a></li>
-          <li><a href="#actividades">Actividades</a></li>
-        </ul>
-        <figure>
-          <picture>
-            <source media="(max-width: 600px)" srcset="../img/direccionArte/retiro_600.jpg">
-            <source media="(max-width: 1200px)" srcset="../img/direccionArte/retiro_1200.jpg">
-            <img class="animated-image" src="../img/sizes/retiro800w.jpeg" alt="Parque del Retiro">
-          </picture>
-          <figcaption>Vista del lago del Parque del Retiro </figcaption>
-        </figure>
-        <section id="ubicacion">
-          <h3 class="section__title">UBICACIÓN</h3>
-          <p class="paragraph-animation">El Parque del Retiro se encuentra en el corazón de Madrid, al este del centro histórico de la ciudad. Está delimitado por importantes vías como la calle de Alcalá, la calle O'Donnell y el Paseo del Prado, lo que lo hace fácilmente accesible desde distintos puntos de la capital. La estación de metro más cercana es Retiro, de la línea 2, aunque también se puede llegar cómodamente en autobús o caminando desde otros sitios emblemáticos como la Puerta de Alcalá o el Museo del Prado. Esta ubicación privilegiada convierte al Retiro en un lugar ideal para relajarse tras explorar el centro de Madrid.</p>
-        </section>
-        <source srcset="../img/formatos/retiro1.jpg?as=avif" type="image/avif" />
-        <source srcset="../img/formatos/retiro1.jpg?as=webp" type="image/webp" />
-        <img class="animated-image" src="../img/formatos/retiro1.jpg" alt="Vista aerea del parque del Retiro" />        
-        <section id="historia">
-          <h3 class="section__title">HISTORIA</h3>
-          <p class="paragraph-animation">El Parque del Retiro tiene una historia que se remonta al siglo XVII, cuando fue creado como parte del complejo del Palacio del Buen Retiro, un lugar de recreo para la realeza durante el reinado de Felipe IV. Originalmente, el parque estaba reservado exclusivamente para la corte, con jardines y espacios para el ocio de la familia real. Con el paso del tiempo y tras la caída del poder real, el Retiro fue abierto al público en el siglo XIX, convirtiéndose en uno de los principales espacios verdes de Madrid. Hoy en día, el parque conserva elementos históricos como el Estanque Grande, el Palacio de Cristal y diversas esculturas y fuentes que reflejan su pasado esplendoroso y su importancia como pulmón verde y centro cultural de la ciudad.</p>
-        </section>
-        <source srcset="../img/formatos/retiro2.jpg?as=avif" type="image/avif" />
-        <source srcset="../img/formatos/retiro2.jpg?as=webp" type="image/webp" />
-        <img class="animated-image" src="../img/formatos/retiro2.jpg" alt="Estatua de Alfonso XII en el parque del Retiro" />
-        <section id="actividades">
-          <h3 class="section__title">ACTIVIDADES</h3>
-          <p class="paragraph-animation">El Parque del Retiro ofrece una amplia variedad de actividades para todas las edades y gustos, lo que lo convierte en un destino ideal tanto para turistas como para residentes de Madrid. Entre las actividades más populares se encuentra el paseo en barca por el Estanque Grande, donde se puede disfrutar de vistas únicas y momentos de tranquilidad en el agua. Además, el parque cuenta con zonas para practicar deportes al aire libre como correr, montar en bicicleta o patinar, así como amplios espacios verdes perfectos para hacer un picnic o relajarse bajo la sombra de sus árboles. También se pueden visitar sus monumentos, como el Palacio de Cristal y el Palacio de Velázquez, que suelen albergar exposiciones de arte. Los fines de semana, el Retiro se llena de vida con actuaciones callejeras, cuentacuentos y músicos, ofreciendo un ambiente festivo y cultural para toda la familia.</p>
-        </section>
-      </article>
-      <article>
-        <include src="./views/detalles.html"></include>
-      </article>
-    </div>
-  </main>
-  <include src="./views/footer.html"></include>
-  <script src="../script.js" defer></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VisitaMadrid | Parque del Retiro</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main>
+      <div class="main__container main__container-responsive">
+        <article>
+          <h2 class="article__title">EL PARQUE DEL RETIRO</h2>
+          <ul class="list-detalles">
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+          </ul>
+          <figure>
+            <picture>
+              <source
+                media="(max-width: 600px)"
+                srcset="../img/direccionArte/retiro_600.jpg"
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcset="../img/direccionArte/retiro_1200.jpg"
+              />
+              <img
+                class="animated-image"
+                src="../img/sizes/retiro800w.jpeg"
+                alt="Parque del Retiro"
+              />
+            </picture>
+            <figcaption>Vista del lago del Parque del Retiro</figcaption>
+          </figure>
+          <section id="ubicacion">
+            <h3 class="section__title">UBICACIÓN</h3>
+            <p class="paragraph-animation">
+              El Parque del Retiro se encuentra en el corazón de Madrid, al este
+              del centro histórico de la ciudad. Está delimitado por importantes
+              vías como la calle de Alcalá, la calle O'Donnell y el Paseo del
+              Prado, lo que lo hace fácilmente accesible desde distintos puntos
+              de la capital. La estación de metro más cercana es Retiro, de la
+              línea 2, aunque también se puede llegar cómodamente en autobús o
+              caminando desde otros sitios emblemáticos como la Puerta de Alcalá
+              o el Museo del Prado. Esta ubicación privilegiada convierte al
+              Retiro en un lugar ideal para relajarse tras explorar el centro de
+              Madrid.
+            </p>
+          </section>
+          <source
+            srcset="../img/formatos/retiro1.jpg?as=avif"
+            type="image/avif"
+          />
+          <source
+            srcset="../img/formatos/retiro1.jpg?as=webp"
+            type="image/webp"
+          />
+          <img
+            class="animated-image"
+            src="../img/formatos/retiro1.jpg"
+            alt="Vista aerea del parque del Retiro"
+            loading="lazy"
+          />
+          <section id="historia">
+            <h3 class="section__title">HISTORIA</h3>
+            <p class="paragraph-animation">
+              El Parque del Retiro tiene una historia que se remonta al siglo
+              XVII, cuando fue creado como parte del complejo del Palacio del
+              Buen Retiro, un lugar de recreo para la realeza durante el reinado
+              de Felipe IV. Originalmente, el parque estaba reservado
+              exclusivamente para la corte, con jardines y espacios para el ocio
+              de la familia real. Con el paso del tiempo y tras la caída del
+              poder real, el Retiro fue abierto al público en el siglo XIX,
+              convirtiéndose en uno de los principales espacios verdes de
+              Madrid. Hoy en día, el parque conserva elementos históricos como
+              el Estanque Grande, el Palacio de Cristal y diversas esculturas y
+              fuentes que reflejan su pasado esplendoroso y su importancia como
+              pulmón verde y centro cultural de la ciudad.
+            </p>
+          </section>
+          <source
+            srcset="../img/formatos/retiro2.jpg?as=avif"
+            type="image/avif"
+          />
+          <source
+            srcset="../img/formatos/retiro2.jpg?as=webp"
+            type="image/webp"
+          />
+          <img
+            class="animated-image"
+            src="../img/formatos/retiro2.jpg"
+            alt="Estatua de Alfonso XII en el parque del Retiro"
+            loading="lazy"
+          />
+          <section id="actividades">
+            <h3 class="section__title">ACTIVIDADES</h3>
+            <p class="paragraph-animation">
+              El Parque del Retiro ofrece una amplia variedad de actividades
+              para todas las edades y gustos, lo que lo convierte en un destino
+              ideal tanto para turistas como para residentes de Madrid. Entre
+              las actividades más populares se encuentra el paseo en barca por
+              el Estanque Grande, donde se puede disfrutar de vistas únicas y
+              momentos de tranquilidad en el agua. Además, el parque cuenta con
+              zonas para practicar deportes al aire libre como correr, montar en
+              bicicleta o patinar, así como amplios espacios verdes perfectos
+              para hacer un picnic o relajarse bajo la sombra de sus árboles.
+              También se pueden visitar sus monumentos, como el Palacio de
+              Cristal y el Palacio de Velázquez, que suelen albergar
+              exposiciones de arte. Los fines de semana, el Retiro se llena de
+              vida con actuaciones callejeras, cuentacuentos y músicos,
+              ofreciendo un ambiente festivo y cultural para toda la familia.
+            </p>
+          </section>
+        </article>
+        <article>
+          <include src="./views/detalles.html"></include>
+        </article>
+      </div>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script src="../script.js" defer></script>
+  </body>
 </html>
